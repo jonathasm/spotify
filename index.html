@@ -1,13 +1,106 @@
 <!doctype html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/spotify.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Spotify</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8"/>
+  <link rel="icon" type="image/svg+xml" href="/favicon.png"/>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Spotify</title>
+</head>
+
+<body>
+
+<section class="capa">
+
+  <header class="head py-10 flex justify-around items-center">
+    <img class="h-20" src="public/spotify.svg" alt="marca spotify">
+    <nav class="text-white text-2xl font-bold">
+      <ul class="flex gap-10">
+        <li><a href="#">Premium</a></li>
+        <li><a href="#">Ajuda</a></li>
+        <li><a href="#">Baixar</a></li>
+        <li>|</li>
+        <li><a href="#">Entrar</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="flex justify-center">
+    <div class="py-72 max-w-3xl">
+      <div class="overflow-hidden relative">
+
+        <svg id="prev" class="z-50 cursor-pointer fill-white-transparent hover:scale-110 hover:fill-white absolute bottom-10 left-0" width="64px" height="64px" viewBox="0 0 24.00 24.00" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff" stroke-width="0.00024000000000000003">
+          <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+          <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+          <g id="SVGRepo_iconCarrier"> <path d="M14.2893 5.70708C13.8988 5.31655 13.2657 5.31655 12.8751 5.70708L7.98768 10.5993C7.20729 11.3805 7.2076 12.6463 7.98837 13.427L12.8787 18.3174C13.2693 18.7079 13.9024 18.7079 14.293 18.3174C14.6835 17.9269 14.6835 17.2937 14.293 16.9032L10.1073 12.7175C9.71678 12.327 9.71678 11.6939 10.1073 11.3033L14.2893 7.12129C14.6799 6.73077 14.6799 6.0976 14.2893 5.70708Z" /> </g>
+        </svg>
+
+        <svg id="next" class="z-50 cursor-pointer fill-white-transparent hover:scale-110 hover:fill-white absolute bottom-10 right-0" width="64px" height="64px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+          <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+          <g id="SVGRepo_iconCarrier"> <path d="M9.71069 18.2929C10.1012 18.6834 10.7344 18.6834 11.1249 18.2929L16.0123 13.4006C16.7927 12.6195 16.7924 11.3537 16.0117 10.5729L11.1213 5.68254C10.7308 5.29202 10.0976 5.29202 9.70708 5.68254C9.31655 6.07307 9.31655 6.70623 9.70708 7.09676L13.8927 11.2824C14.2833 11.6729 14.2833 12.3061 13.8927 12.6966L9.71069 16.8787C9.32016 17.2692 9.32016 17.9023 9.71069 18.2929Z"/> </g>
+        </svg>
+
+        <div id="carousel" class="flex duration-1000 transition ease-in-out">
+
+          <div class="w-full shrink-0 slide">
+            <div class="flex justify-center">
+              <div class="flex flex-col gap-10 text-white font-bold text-nowrap">
+                <p class="text-6xl">Música para todos</p>
+                <div class="flex justify-around">
+                  <button class="px-4 py-2 rounded-3xl bg-violet-800 text-sm">APROVEITE O SPOTIFY FREE</button>
+                  <button class="px-4 py-2 rounded-3xl bg-transparent border-2 text-sm">OBTER O SPOTIFY PREMIUM</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="w-full shrink-0 slide">
+            <div class="flex justify-center">
+              <div class="flex flex-col gap-10 text-white font-bold text-nowrap">
+                <p class="text-6xl">As melhores rádios</p>
+                <div class="flex justify-around">
+                  <button class="px-4 py-2 rounded-3xl bg-transparent border-2 text-sm">OUÇA AGORA</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="w-full shrink-0 slide">
+            <div class="flex justify-center">
+              <div class="flex flex-col gap-10 text-white font-bold text-nowrap">
+                <p class="text-6xl">Música para todos</p>
+                <div class="flex justify-around">
+                  <button class="px-4 py-2 rounded-3xl bg-violet-800 text-sm">APROVEITE O SPOTIFY FREE</button>
+                  <button class="px-4 py-2 rounded-3xl bg-transparent border-2 text-sm">OBTER O SPOTIFY PREMIUM</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="w-full shrink-0 slide">
+            <div class="flex justify-center">
+              <div class="flex flex-col gap-10 text-white font-bold text-nowrap">
+                <p class="text-6xl">As melhores rádios</p>
+                <div class="flex justify-around">
+                  <button class="px-4 py-2 rounded-3xl bg-transparent border-2 text-sm">OUÇA AGORA</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<script type="module" src="/main.js"></script>
+</body>
 </html>

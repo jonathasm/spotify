@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.capa {
+    background-image: linear-gradient(to right, rgba(235, 30, 180, 0.6), rgba(150, 0, 255, 0.6)), url("public/capa.png");
+}
+
+.head {
+    background-color: rgba(0, 0, 0, 0.5);
+}
