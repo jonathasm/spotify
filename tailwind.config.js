@@ -5,6 +5,7 @@ export default {
     extend: {
       colors: {
         'white-transparent': 'rgba(255,255,255,0.50)',
+        'violet-spotify': 'rgba(114,43,239,1)',
       },
     }
   }

@@ -13,3 +13,22 @@ body {
 .head {
     background-color: rgba(0, 0, 0, 0.5);
 }
+
+.grid img {
+    @apply rounded;
+    -webkit-box-shadow: 0 2px 24px -5px #000000;
+    box-shadow: 0 2px 24px -5px #000000;
+}
+
+@keyframes moveRightToLeft {
+  0% {
+    transform: translateX(15%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.animated-text {
+  animation: moveRightToLeft 3s ease-out forwards;
+}
