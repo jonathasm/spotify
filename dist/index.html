@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"/>
+  <link rel="icon" type="image/svg+xml" href="/favicon.png"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Spotify</title>
+  <script type="module" crossorigin src="/assets/index-Bp-v3Fqn.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-BTMQjTGF.css">
+</head>
+
+<body>
+
+<section class="capa bg-bottom bg-cover">
+
+  <header class="head py-10 flex justify-around items-center">
+    <img class="h-20" src="/assets/spotify-DAu55PSN.svg" alt="marca spotify">
+    <nav class="text-white text-2xl font-bold">
+      <ul class="flex gap-10">
+        <li><a href="#">Premium</a></li>
+        <li><a href="#">Ajuda</a></li>
+        <li><a href="#">Baixar</a></li>
+        <li>|</li>
+        <li><a href="#">Entrar</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="flex justify-center">
+    <div class="py-72 max-w-3xl">
+      <div class="overflow-hidden relative">
+
+        <svg id="prev"
+          class="z-50 cursor-pointer fill-white-transparent hover:scale-110 hover:fill-white absolute bottom-10 left-0"
+          width="64px" height="64px" viewBox="0 0 24.00 24.00" fill="none" xmlns="http://www.w3.org/2000/svg"
+          stroke="#ffffff" stroke-width="0.00024000000000000003">
+          <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+          <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+          <g id="SVGRepo_iconCarrier">
+            <path
+              d="M14.2893 5.70708C13.8988 5.31655 13.2657 5.31655 12.8751 5.70708L7.98768 10.5993C7.20729 11.3805 7.2076 12.6463 7.98837 13.427L12.8787 18.3174C13.2693 18.7079 13.9024 18.7079 14.293 18.3174C14.6835 17.9269 14.6835 17.2937 14.293 16.9032L10.1073 12.7175C9.71678 12.327 9.71678 11.6939 10.1073 11.3033L14.2893 7.12129C14.6799 6.73077 14.6799 6.0976 14.2893 5.70708Z"/>
+          </g>
+        </svg>
+
+        <svg id="next"
+          class="z-50 cursor-pointer fill-white-transparent hover:scale-110 hover:fill-white absolute bottom-10 right-0"
+          width="64px" height="64px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+          <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+          <g id="SVGRepo_iconCarrier">
+            <path
+              d="M9.71069 18.2929C10.1012 18.6834 10.7344 18.6834 11.1249 18.2929L16.0123 13.4006C16.7927 12.6195 16.7924 11.3537 16.0117 10.5729L11.1213 5.68254C10.7308 5.29202 10.0976 5.29202 9.70708 5.68254C9.31655 6.07307 9.31655 6.70623 9.70708 7.09676L13.8927 11.2824C14.2833 11.6729 14.2833 12.3061 13.8927 12.6966L9.71069 16.8787C9.32016 17.2692 9.32016 17.9023 9.71069 18.2929Z"/>
+          </g>
+        </svg>
+
+        <div id="carousel" class="flex duration-700 transition ease-in-out">
+
+          <div class="w-full shrink-0 slide">
+            <div class="flex justify-center">
+              <div class="flex flex-col gap-10 text-white font-bold text-nowrap">
+                <p class="text-6xl">Música para todos</p>
+                <div class="flex justify-around">
+                  <button class="px-4 py-2 rounded-3xl bg-violet-spotify text-sm">APROVEITE O SPOTIFY FREE</button>
+                  <button class="px-4 py-2 rounded-3xl bg-transparent border-2 text-sm">OBTER O SPOTIFY PREMIUM</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="w-full shrink-0 slide">
+            <div class="flex justify-center">
+              <div class="flex flex-col gap-10 text-white font-bold text-nowrap">
+                <p class="text-6xl">As melhores rádios</p>
+                <div class="flex justify-around">
+                  <button class="px-4 py-2 rounded-3xl bg-transparent border-2 text-sm">OUÇA AGORA</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="w-full shrink-0 slide">
+            <div class="flex justify-center">
+              <div class="flex flex-col gap-10 text-white font-bold text-nowrap">
+                <p class="text-6xl">Música para todos</p>
+                <div class="flex justify-around">
+                  <button class="px-4 py-2 rounded-3xl bg-violet-spotify text-sm">APROVEITE O SPOTIFY FREE</button>
+                  <button class="px-4 py-2 rounded-3xl bg-transparent border-2 text-sm">OBTER O SPOTIFY PREMIUM</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="w-full shrink-0 slide">
+            <div class="flex justify-center">
+              <div class="flex flex-col gap-10 text-white font-bold text-nowrap">
+                <p class="text-6xl">As melhores rádios</p>
+                <div class="flex justify-around">
+                  <button class="px-4 py-2 rounded-3xl bg-transparent border-2 text-sm">OUÇA AGORA</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<section>
+  <div class="flex justify-center">
+    <div class="px-16 py-32 max-w-7xl">
+      <div class="grid justify-items-stretch grid-flow-col grid-rows-2 grid-cols-4 gap-12">
+
+        <img id="justin" class="cursor-pointer" src="/img1.jpg" alt="album de musica"> <img id="trap"
+        class="cursor-pointer" src="/img3.jpg" alt="album de musica"> <img id="zara" class="cursor-pointer"
+        src="/img2.jpg" alt="album de musica"> <img id="daya" class="cursor-pointer" src="/img4.jpg"
+        alt="album de musica">
+
+        <div id="textos" class="col-span-2 row-span-2">
+          <div class="flex flex-col gap-10">
+            <h1 id="titulo-principal" class="text-4xl font-bold text-violet-spotify"> O que o Spotify tem?</h1>
+            <div class="flex flex-col gap-4">
+              <h2 id="titulo-a" class="text-2xl font-bold text-violet-spotify">Músicas</h2>
+              <p id="texto-a"
+                class="font-medium">O Spotify tem milhões de músicas. Escute seus sons favoritos, descubra novas músicas e reúna seus favoritos em um só lugar.</p>
+            </div>
+            <div class="flex flex-col gap-4">
+              <h2 id="titulo-b" class="text-2xl font-bold text-violet-spotify">Playlists</h2>
+              <p id="texto-b"
+                class="font-medium">No Spotify você encontra uma playlist para cada momento. Todas feitas por fanáticos e especialistas da música. </p>
+            </div>
+            <div class="flex flex-col gap-4">
+              <h2 id="titulo-c" class="text-2xl font-bold text-violet-spotify">Novos lançamentos</h2>
+              <p id="texto-c"
+                class="font-medium">Escute os novos lançamentos de singles e álbuns da semana e veja o que está bombando no Top 50. </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<section class="capa bg-bottom bg-cover">
+  <div>
+    <div class="flex flex-col xl:flex-row justify-center gap-20 items-center">
+
+      <div class="py-20">
+        <div class="flex flex-col gap-5 py-8">
+          <h1 class="text-5xl font-bold text-white"> Fácil</h1>
+          <div class="flex flex-col gap-4">
+            <h2 class="text-2xl font-bold text-teal-spotify">Buscar</h2>
+            <p class="font-medium text-lg text-white">Já sabe o que quer escutar? <br> É só procurar e apertar o play.
+            </p>
+          </div>
+          <div class="flex flex-col gap-4">
+            <h2 class="text-2xl font-bold text-teal-spotify">Navegar</h2>
+            <p
+              class="w-96 font-medium text-lg text-white">Veja os novos lançamentos, o que está bombando nas paradas e as melhores playlists para o seu momento. </p>
+          </div>
+          <div class="flex flex-col gap-4">
+            <h2 class="text-2xl font-bold text-teal-spotify">Descobrir</h2>
+            <p
+              class="w-96 font-medium text-lg text-white">Curta músicas novas toda segunda-feira com uma playlist personalizada pra você. Ou relaxe e curta uma das rádios. </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="pl-20">
+        <div class="flex w-full">
+          <img class="h-[600px] rotate-12 -translate-y-28" src="/iphone1.png" alt="iphone one"> <img
+          class="h-[600px] rotate-12 translate-y-16" src="/iphone2.png" alt="iphone vodafone">
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</section>
+
+<footer class="bg-footer py-32 z-50 relative">
+  <div class="flex justify-center gap-24">
+    <img class="min-w-52 h-20" src="/spotify.svg" alt="logo spotify">
+    <div class="footer-grid justify-items-center gap-24 text-white text-lg">
+      <section>
+        <p class="font-bold">COMPANY</p>
+        <nav>
+          <ul>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Empregos</a></li>
+            <li><a href="#">Imprensa</a></li>
+            <li><a href="#">Novidades</a></li>
+          </ul>
+        </nav>
+      </section>
+      <section>
+        <p class="font-bold">COMUNIDADES</p>
+        <nav>
+          <ul>
+            <li><a href="#">Artistas</a></li>
+            <li><a href="#">Desenvolvedores</a></li>
+            <li><a href="#">Marcas</a></li>
+          </ul>
+        </nav>
+      </section>
+      <section>
+        <p class="font-bold">LINKS ÚTEIS</p>
+        <nav>
+          <ul>
+            <li><a href="#">Ajuda</a></li>
+            <li><a href="#">Presentes</a></li>
+            <li><a href="#">Player na web</a></li>
+          </ul>
+        </nav>
+      </section>
+      <section>
+        <div class="w-48 flex justify-between">
+          <img src="/facebook.png" alt="link facebook">
+          <img src="/instagram.png" alt="link instagram">
+          <img src="/twitter.png" alt="link X">
+        </div>
+      </section>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
