@@ -881,7 +881,7 @@ body {
 }
 
 .capa {
-  background-image: linear-gradient(to right, rgba(235, 20, 180, 0.5), rgba(100, 0, 255, 0.5)), url("../../public/capa.png");
+  background-image: linear-gradient(to right, rgba(235, 20, 180, 0.5), rgba(100, 0, 255, 0.5)), url("dist/assets/img/capa.png");
 }
 
 .head {
